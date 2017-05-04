@@ -3,7 +3,7 @@
 # wechsel in skriptverzeichnis
 cd "$( dirname "$( readlink -f "$0" )")"
 
-# teste ob ziel url gesetzt ist 
+# teste ob ziel url gesetzt ist
 if [ -z "$1" ]; then
     echo "Kein username@servername angegeben."
     exit 1
@@ -14,7 +14,7 @@ rm -f app.zip
 # in app verzeichnis wechseln
 cd app/
 # inhalte im app verzeichnis zippen
-zip -r ../app.zip *
+zip -r ../app.zip * .htaccess
 # zurück nach hauptverzeichnis
 cd ..
 # auf webspace den inhalt von html/ löschen
