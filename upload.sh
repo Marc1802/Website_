@@ -18,7 +18,7 @@ zip -r ../app.zip * .htaccess
 # zurück nach hauptverzeichnis
 cd ..
 # auf webspace den inhalt von html/ löschen
-ssh ${1} "rm -rf ~/html/*"
+ssh ${1} "rm -rf ~/html/* ~/html/.htaccess"
 # zip datei auf webspace hochladen
 scp app.zip ${1}:~/html
 # zip datei auf webspace entpacken
