@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Dieser Server ist privat."
+AuthUserFile /home/masbach/htpasswd
+Require valid-user
